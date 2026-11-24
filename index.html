@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Practice</title>
+
+    <style>
+        body {
+            background-color: #eeeeee;
+            color: black;
+        }
+
+        h1 {
+            background-color: navy;
+            color: white;
+            width: 500px;
+            height: 60px;
+            border: 4px solid gold;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        /* DIV 1: Margin */
+        .box1 {
+            background-color: red;
+            color: white;
+            width: 300px;
+            height: 100px;
+            margin: 30px;
+        }
+
+        /* DIV 2: Border */
+        .box2 {
+            background-color: blue;
+            color: white;
+            width: 250px;
+            height: 100px;
+            border: 5px solid black;
+        }
+
+        /* DIV 3: Padding */
+        .box3 {
+            background-color: green;
+            color: white;
+            width: 250px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        /* DIV 4: Margin + Border + Padding */
+        .box4 {
+            background-color: orange;
+            color: black;
+            width: 350px;
+            height: 150px;
+            margin: 25px;
+            border: 6px solid purple;
+            padding: 15px;
+        }
+
+        /* DIV 5: Parent Div */
+        .parent {
+            background-color: pink;
+            color: black;
+            width: 500px;
+            height: 350px;
+            margin: 30px;
+            border: 5px solid red;
+            padding: 20px;
+        }
+
+        /* DIV 6: Child Div */
+        .child {
+            background-color: teal;
+            color: white;
+            width: 350px;
+            height: 200px;
+            margin: 15px;
+            border: 4px solid navy;
+            padding: 15px;
+        }
+
+        /* DIV 7: Nested Div */
+        .small {
+            background-color: yellow;
+            color: black;
+            width: 200px;
+            height: 80px;
+            margin: 10px;
+            border: 3px dashed black;
+            padding: 10px;
+        }
+
+        /* DIV 8: Content Box */
+        .box8 {
+            background-color: lightblue;
+            color: black;
+            width: 300px;
+            height: 100px;
+            margin: 20px;
+            border: 5px solid blue;
+            padding: 20px;
+        }
+
+        /* DIV 9: Different Border */
+        .box9 {
+            background-color: brown;
+            color: white;
+            width: 300px;
+            height: 100px;
+            margin: 20px;
+            border: 8px dashed yellow;
+            padding: 10px;
+        }
+
+        /* DIV 10: Nested Box Model */
+        .outer {
+            background-color: gray;
+            color: white;
+            width: 550px;
+            height: 350px;
+            margin: 30px;
+            border: 6px solid black;
+            padding: 20px;
+        }
+
+        .middle {
+            background-color: purple;
+            color: white;
+            width: 400px;
+            height: 220px;
+            margin: 10px;
+            border: 5px solid gold;
+            padding: 15px;
+        }
+
+        .inner {
+            background-color: lime;
+            color: black;
+            width: 250px;
+            height: 100px;
+            margin: 10px;
+            border: 4px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <h2>1. Margin Example</h2>
+    <div class="box1">
+        This is Margin
+    </div>
+
+    <h2>2. Border Example</h2>
+    <div class="box2">
+        This is Border
+    </div>
+
+    <h2>3. Padding Example</h2>
+    <div class="box3">
+        This is Padding
+    </div>
+
+    <h2>4. Margin + Border + Padding</h2>
+    <div class="box4">
+        All Three Properties
+    </div>
+
+    <h2>5. Parent and Child Divs</h2>
+    <div class="parent">
+        Parent Div
+
+        <div class="child">
+            Child Div
+
+            <div class="small">
+                Small Div
+            </div>
+
+        </div>
+    </div>
+
+    <h2>6. Content Example</h2>
+    <div class="box8">
+        This is the Content
+    </div>
+
+    <h2>7. Dashed Border</h2>
+    <div class="box9">
+        Dashed Border Example
+    </div>
+
+    <h2>8. Three Nested Divs</h2>
+    <div class="outer">
+        Outer Div
+
+        <div class="middle">
+            Middle Div
+
+            <div class="inner">
+                Inner Div
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
